@@ -1,5 +1,3 @@
-/* <!-- =============clients================= --> */
-
 .title-clients {
   font-family: $main-font;
   font-weight: bold;
@@ -11,20 +9,13 @@
   margin-top: 94px;
   padding-bottom: 50px;
 }
-.clients .container {
-  margin-bottom: 94px;
-  width: 1200px;
-}
+
 .clients-list {
   display: flex;
 }
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients-link:hover {
-  fill: $accent-color;
-  border-color: $accent-color;
 }
 
 .clients-link {
@@ -38,5 +29,9 @@
   fill: #afb1b8;
   transition-duration: 250ms;
   transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }
-/* <!-- =============clients end================= --> */

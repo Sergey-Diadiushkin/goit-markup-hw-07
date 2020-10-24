@@ -1,7 +1,26 @@
-/* ==============about================== */
-
 .about {
   margin-bottom: 94px;
+
+  &-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 70px;
+    width: 370px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: rgb(253, 253, 253);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+
+  &-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .second-title {
@@ -14,34 +33,3 @@
   text-align: center;
   padding-bottom: 50px;
 }
-.container .about-list {
-  display: flex;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.about-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.container-img {
-  position: relative;
-}
-.about-subtitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 70px;
-  width: 370px;
-  bottom: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: rgb(253, 253, 253);
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-}
-
-/* ====================about end================== */

@@ -1,15 +1,20 @@
-/* =================qualitys============= */
-.qualitys .container {
-  display: flex;
-  width: 1200px;
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
 .qualitys-list {
   display: flex;
-}
-.qualitys-list-item:not(:last-child) {
-  margin-right: 30px;
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+  }
 }
 
 .subtitle-qualitys {
@@ -20,6 +25,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .description {
   font-weight: 400;
   font-size: 14px;
@@ -29,16 +35,6 @@
   padding-right: 20px;
 }
 
-.qualitys-list-item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-}
 .icon-antenna::before {
   background-image: url(../images/qualitys/antenna.svg);
 }
@@ -51,5 +47,3 @@
 .icon-astronaut::before {
   background-image: url(../images/qualitys/astronaut.svg);
 }
-
-/* ==============qualitys end============ */
